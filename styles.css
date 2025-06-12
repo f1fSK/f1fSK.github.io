@@ -356,3 +356,13 @@ a:hover {
   background: #2f81f7;
   border-radius: 8px;
 }
+
+.project-tile.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  filter: grayscale(0.7);
+}
+.tag.paid {
+  background: #f77e2f;
+  color: #fff;
+}
