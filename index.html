@@ -1,92 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>f1f | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>f1f | FiveM Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/75039074?v=4">
+<link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/75039074?v=4">
 </head>
-<body>
-  <div class="bg-animated"></div>
-  <main>
-    <section class="hero">
-      <div class="hero-avatar">
-        <img src="https://avatars.githubusercontent.com/u/75039074?v=4" alt="f1f avatar">
-      </div>
-      <div class="hero-info">
-        <h1>f1f</h1>
-        <p class="hero-desc">Lua &amp; FiveM Developer<br><span>🇸🇰 Slovakia</span></p>
-        <div class="hero-links">
-          <a href="https://github.com/f1fSK" target="_blank" class="btn">GitHub</a>
-          <a href="https://discord.gg/hZHWNWvwm3" class="btn btn-outline" target="_blank">Discord Server</a>
-          <a href="scripts" class="btn">Scripts</a>
-        </div>
-      </div>
-    </section>
-    <section class="cards-row">
-      <div class="card about">
-        <h2>About Me</h2>
-        <ul>
-          <li>🔭 Working on fivem scripts</li>
-          <li>🌱 Learning <b>Python</b> &amp; CSS</li>
-          <li>💬 Lua, FiveM</li>
-          <li>⚡ Started coding to avoid overpriced scripts</li>
-        </ul>
-      </div>
-      <div class="card skills">
-        <h2>Skills</h2>
-        <div class="badges">
-          <span>Lua</span>
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>FiveM</span>
-        </div>
-        <h3>Tools</h3>
-        <div class="badges">
-          <span>VSCode</span>
-          <span>GitHub</span>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        <a href="https://github.com/f1fSK/txadminlogs" target="_blank" class="project-tile">
-          <div class="project-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua">
-          </div>
-          <div>
-            <h3>txadminlogs</h3>
-            <p>Logging system for TxAdmin actions with Discord webhooks.</p>
-            <span class="tag">Lua</span>
-          </div>
-        </a>
-        <a href="https://github.com/f1fSK/emergency-ai-moveover" target="_blank" class="project-tile">
-          <div class="project-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua">
-          </div>
-          <div>
-            <h3>emergency-ai-moveover</h3>
-            <p>NPC traffic improvement for FiveM emergency vehicles.</p>
-            <span class="tag">Lua</span>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section>
-      <h2 class="section-title">GitHub Stats</h2>
-      <div class="stats-row">
-        <img src="https://github-readme-stats.vercel.app/api?username=f1fSK&show_icons=true&theme=dark" alt="GitHub Stats">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=f1fSK&theme=dark" alt="GitHub Streak">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=f1fSK&layout=compact&theme=dark" alt="Top Languages">
-      </div>
-    </section>
-    <footer>
-      <span>© 2025 f1f | Made with 💙</span>
-    </footer>
-  </main>
+<body class="gated">
+<div id="gate">
+<div class="term">
+<div class="term-head">
+<img src="https://avatars.githubusercontent.com/u/75039074?v=4" alt="avatar">
+<span>f1f.lua</span>
+</div>
+<pre id="term-code"></pre>
+<button id="enter">Click to open</button>
+</div>
+</div>
+<canvas id="bg"></canvas>
+<header class="container">
+<nav class="nav">
+<a href="#" class="logo">f1f<span class="blink">_</span></a>
+<ul class="links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#work">Work</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<section class="hero reveal">
+<img class="avatar" src="https://avatars.githubusercontent.com/u/75039074?v=4" alt="f1f profile photo">
+<h1>Hi, I’m <span class="grad">f1f</span></h1>
+<p class="tagline">From concept to code — your perfect FiveM script.</p>
+<div class="cta">
+<a class="btn primary" href="https://github.com/f1fSK" target="_blank" rel="noopener"><i data-lucide="github"></i>GitHub</a>
+<a class="btn ghost" href="https://discord.gg/hvcb2aDK6j" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Discord</a>
+</div>
+</section>
+</header>
+<main>
+<section id="about" class="container section reveal">
+<h2>About</h2>
+<p>I build custom FiveM resources with a focus on performance, clean code, and a smooth player experience.</p>
+<p>From optimized ESX/QBCore systems to unique server features, I create scripts tailored exactly to your requirements.</p>
+</section>
+<section id="skills" class="container section reveal">
+<h2>Core Stack</h2>
+<div class="chips">
+<span class="chip"><i data-lucide="bolt"></i> FiveM</span>
+<span class="chip"><i data-lucide="code"></i> Lua</span>
+<span class="chip"><i data-lucide="layout-template"></i> HTML</span>
+<span class="chip"><i data-lucide="braces"></i> JavaScript</span>
+<span class="chip"><i data-lucide="terminal"></i> Python</span>
+<span class="chip"><i data-lucide="cpu"></i> ESX/QBCore</span>
+<span class="chip"><i data-lucide="gauge"></i> Optimization</span>
+</div>
+<div class="cards">
+<article class="card">
+<h3><i data-lucide="gamepad-2"></i> Server Systems</h3>
+<p>Jobs, and other scripts that run smoothly without lag.</p>
+</article>
+<article class="card">
+<h3><i data-lucide="shield"></i> Security</h3>
+<p>Safe and optimized code with built-in checks to protect against cheaters and exploits.</p>
+</article>
+<article class="card">
+<h3><i data-lucide="shield-check"></i> Reliability</h3>
+<p>Stable scripts you can rely on, tested to work under heavy server load.</p>
+</article>
+</div>
+</section>
+<section id="work" class="container section reveal">
+<h2>Recent Work</h2>
+<p>Newest release and a quick way to order a custom script.</p>
+<div class="grid">
+<article class="work feature">
+<h4>Weapon Sling</h4>
+<p>A FiveM script for weapon slinging, custom weapon position adjustment, and immersive draw/holster animations.</p>
+<div class="tags"><span class="pill">Lua</span><span class="pill">FiveM</span></div>
+<div class="actions">
+<a class="btn small primary" href="https://github.com/f1fSK/weapon_sling" target="_blank" rel="noopener"><i data-lucide="github"></i>View on GitHub</a>
+</div>
+</article>
+<article class="work">
+<h4>Custom Scripts</h4>
+<p>Made-to-order jobs, features, and server tools built to your spec.</p>
+<div class="tags"><span class="pill">FiveM</span><span class="pill">QBCore</span></div>
+<div class="actions">
+<a class="btn small ghost" href="https://discord.gg/hvcb2aDK6j" target="_blank" rel="noopener"><i data-lucide="shopping-bag"></i>Order custom script</a>
+</div>
+</article>
+</div>
+<p class="subtle">Looking for more? Browse everything on <a class="inline-link" href="https://github.com/f1fSK" target="_blank" rel="noopener">GitHub</a>.</p>
+</section>
+<section id="contact" class="container section reveal">
+<div class="cta">
+<a class="btn ghost" href="https://discord.gg/hvcb2aDK6j" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Join Discord</a>
+</div>
+</section>
+</main>
+<footer class="container">
+<p>© <span id="year"></span> f1f.</p>
+</footer>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
 </body>
 </html>
